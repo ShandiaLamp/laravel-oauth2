@@ -13,3 +13,10 @@
 
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login');
+
+
+Route::group([
+    'middleware'    => 'auth'
+], function () {
+    Route::get('/', 'Passport\ClientController@index');
+});
