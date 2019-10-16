@@ -4,6 +4,10 @@
     <div class="box">
         <h3>应用列表</h3>
 
+        <div class="handle-box">
+            <a class="btn btn-primary" href="/client/create" role="button">添加</a>
+        </div>
+
         <table class="table">
             <thead>
             <tr>
