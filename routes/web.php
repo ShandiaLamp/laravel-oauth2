@@ -19,4 +19,6 @@ Route::group([
     'middleware'    => 'auth'
 ], function () {
     Route::get('/', 'Passport\ClientController@index');
+    Route::get('/client/create', 'Passport\ClientController@create');
+    Route::post('/client', 'Passport\ClientController@store');
 });
